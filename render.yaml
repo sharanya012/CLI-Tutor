@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: cli-tutor
+    env: python
+    region: oregon  # or leave blank for auto
+    buildCommand: ""
+    startCommand: gunicorn app:app
+    envVars:
+      - key: GEMINIE_API_KEY
+        sync: false  # You'll set the real value on Render manually
