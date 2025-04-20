@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLI-Tutor - CLI Assistant</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Source+Code+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div class="app-container">
+        <header class="app-header">
+            <a href="/" class="home-link"><i class="fas fa-home"></i></a>
+            <h1><i class="fas fa-terminal"></i> CLI-Tutor</h1>
+            <p class="subtitle">Your AI-powered command line mentor</p>
+            <button id="newChatBtn"><i class="fas fa-plus"></i> New Chat</button>
+        </header>
+
+        <div class="chat-container" id="chatContainer">
+            <!-- Messages will appear here -->
+        </div>
+
+        <div class="input-container" id="inputContainer">
+            <div class="chat-input">
+                <select id="osSelector" class="os-selector">
+                    <option value="Windows" selected>Windows</option>
+                    <option value="macOS">macOS</option>
+                    <option value="Linux">Linux</option>
+                </select>
+                <input type="text" id="userInput" placeholder="Ask me anything about command-line...">
+                <button id="sendButton"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="landing-footer">
+        <p>CLI-Tutor uses advanced AI to help you work smarter in the terminal</p>
+        <div class="footer-links">
+            <a href="#">GitHub</a>
+        </div>
+    </footer>
+    <script src="/static/js/script.js"></script>
+</body>
+</html>
